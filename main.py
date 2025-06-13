@@ -6,22 +6,28 @@ if __name__ == "__main__":
     like insertion, recursion-based sum, search, and reverse.
     """
 
-    # TODO: 1) Create a LinkedList instance
-    
-
-    # TODO: 2) Insert some sample data using insert_at_front or insert_at_end
-    
-    # TODO: 3) Display the list to verify insertion
-    
-
-    # TODO: 4) Call recursive_sum and print the result
-    
-
-    # TODO: 5) Call recursive_search with a target and print result
-    
-
-    # TODO: 6) Call recursive_reverse, then display the reversed list
-    
+   
+    ll = LinkedList()
 
 
-# 
+    ll.insert_at_front(10)
+    ll.insert_at_front(20)
+    ll.insert_at_end(5)
+    ll.insert_at_end(1)
+
+
+    print("Original list:")
+    ll.display()
+
+
+    total = ll.recursive_sum()
+    print("Sum of all node data:", total)
+
+
+    target = 5
+    found = ll.recursive_search(target)
+    print(f"Search for {target}:", found)
+
+    print("Reversing list...")
+    ll.recursive_reverse()
+    ll.display()
